@@ -1,6 +1,6 @@
 # 📊 Project_SQL_Spotify
 
-![](What-is-Spotify-for-Artists__meta.jpg)
+![](images/What-is-Spotify-for-Artists__meta.jpg)
 
 _Reviewing the NETFLIX catalog of Movies and Series using SQL._
 
