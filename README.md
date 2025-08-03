@@ -1,6 +1,6 @@
 # 📊 Project_SQL_Spotify
 
-![]()
+![](What-is-Spotify-for-Artists__meta.jpg)
 
 _Reviewing the NETFLIX catalog of Movies and Series using SQL._
 
@@ -27,8 +27,8 @@ The objective of this project is to **practice SQL** by working with SPOTIFY. Th
 
 - **Tool Used:** SQL Server Management Studio (SSMS)
 - **SQL Script:** 
-- **Dataset Link:** [Movies Dataset]()
-- **Format**: ``
+- **Dataset Link:** [Movies Dataset](https://www.kaggle.com/datasets/sanjanchaudhari/spotify-dataset)
+- **Format**: `.csv`
 - **Schema**:
 ```sql
 -- create table
