@@ -2,7 +2,7 @@
 
 ![](images/What-is-Spotify-for-Artists__meta.jpg)
 
-_Reviewing the NETFLIX catalog of Movies and Series using SQL._
+_Reviewing the SPOTIFY catalog of Movies and Series using SQL._
 
 ---
 
