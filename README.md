@@ -38,7 +38,7 @@ The objective of this project is to **practice SQL** by working with SPOTIFY. Th
 
 ### ✅ Setting up the Database
 
-The following changes were done for the DB to be ready for use. 
+The following changes were done to the DB to be ready for use. 
 
 - Data Type change.
      - From INT to BIGINT.
