@@ -62,7 +62,7 @@ from Spotify
 where Stream > 1000000000
 order by Stream desc
 ```
-![](images/Querie1.0)
+![](images/Querie1.0.png)
 
 Which artist has the most songs with 1 billion streams? 
 
@@ -75,7 +75,7 @@ where stream > 1000000000
 group by Artist
 order by Songs_Over_1B desc
 ```
-![](images/Querie1.1)
+![](images/Querie1.1.png)
 
 2. List all albums along with their respective artists.
 
@@ -86,7 +86,7 @@ select distinct
 from spotify
 order by album desc
 ```
-![](images/Querie2.0)
+![](images/Querie2.0.png)
 
 How many albums does each artist have?
 
@@ -99,7 +99,7 @@ from Spotify
 group by Artist
 order by Numer_Of_Albums desc
 ```
-![](images/Querie2.1)
+![](images/Querie2.1.png)
 
 3. Get the total number of comments for tracks where licensed = TRUE.
 ```sql
@@ -111,7 +111,7 @@ from Spotify
 where Licensed = 'True' -- In this case, the information of True or False is saved as 1 and 0, but we can still use True. 
 order by Comments desc
 ```
-![](images/Querie3.0)
+![](images/Querie3.0.png)
 
 How Many Tracks are licensed?
 
@@ -123,7 +123,7 @@ from Spotify
 group by Licensed
 Order by Number_Of_Licensed_Songs desc
 ```
-![](images/Querie3.1)
+![](images/Querie3.1.png)
 
 4. Find all tracks that belong to the album type single.
 
@@ -135,7 +135,7 @@ select
 from Spotify
 where Album_type = 'single'
 ```
-![](images/Querie4.0)
+![](images/Querie4.0.png)
 
 How many single album types does each artist have?
 
@@ -148,7 +148,7 @@ where Album_type = 'single'
 group by Artist
 Order by Number_Of_Single_Albums desc
 ```
-![](images/Querie4.1)
+![](images/Querie4.1.png)
 
 5. Count the total number of tracks by each artist.
 
@@ -160,7 +160,7 @@ from Spotify
 group by Artist
 Order by Number_Of_Songs desc
 ```
-![](images/Querie5.0)
+![](images/Querie5.0.png)
 
 6. Calculate the average danceability of tracks in each album.
 
@@ -172,7 +172,7 @@ from Spotify
 group by album
 Order by Avg_Dance desc
 ```
-![](images/Querie6.0)
+![](images/Querie6.0.png)
 
 7. Find the top 5 tracks with the highest energy values.
 
@@ -181,7 +181,7 @@ select top 5 Track, Energy
 from Spotify
 Order by Energy desc
 ```
-![](images/Querie7.0)
+![](images/Querie7.0.png)
 
 8. List all tracks along with their views and likes where official_video = TRUE.
 ```sql
@@ -191,7 +191,7 @@ where official_video = 'True'
 group by Track
 Order by Total_Views desc
 ```
-![](images/Querie8.0)
+![](images/Querie8.0.png)
 
 9. For each album, calculate the total views of all associated tracks.
 
@@ -201,7 +201,7 @@ from Spotify
 group by album, Track
 order by Total_views desc
 ```
-![](images/Querie9.0)
+![](images/Querie9.0.png)
 
 10. Retrieve the track names that have been streamed on Spotify more than YouTube.
 
@@ -212,7 +212,7 @@ where most_playedon = 'Spotify'
 order by stream desc
 ```
 
-![](images/Querie10.0)
+![](images/Querie10.0.png)
 
 How can we validate this?
 
@@ -226,7 +226,7 @@ from Spotify
 group by track, artist
 order by Streamed_Spotify desc
 ```
-![](images/Querie10.1)
+![](images/Querie10.1.png)
 
 11. Find the top 3 most-viewed tracks for each artist using window functions.
 
@@ -245,14 +245,14 @@ from Most_viewed
 where ranked <= 3
 order by artist, Total_views desc
 ```
-![](images/Querie11.0)
+![](images/Querie11.0.png)
 
 12. Write a query to find tracks where the liveness score is above the average.
 
 ```sql
 select avg(liveness) as Avg_liv from Spotify) -- 361.85
 ```
-![](images/Querie12.0)
+![](images/Querie12.0.png)
 
 ```sql
 select 
@@ -263,7 +263,7 @@ from Spotify
 where Liveness > (select avg(liveness) as Avg_liv from Spotify) -- 361.85
 order by Liveness asc
 ```
-![](images/Querie12.1)
+![](images/Querie12.1.png)
 
 13. Use a WITH clause to calculate the difference between the highest and lowest energy values for tracks in each album.
 
@@ -282,7 +282,7 @@ select
 from rank_energy_album
 order by Energy_diff desc
 ```
-![](images/Querie13.0)
+![](images/Querie13.0.png)
 
 ## 🎯 Key Findings
 
